@@ -36,6 +36,7 @@ public class SplashScreen {
           mSplashDialog.setContentView(R.layout.launch_screen);
 
           LottieAnimationView lottie = (LottieAnimationView) mSplashDialog.findViewById(lottieId);
+          lottie.setImageAssetsFolder("lottie/image");
 
           lottie.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
