@@ -37,7 +37,7 @@ public class SplashScreen {
 
           LottieAnimationView lottie = (LottieAnimationView) mSplashDialog.findViewById(lottieId);
           lottie.setImageAssetsFolder("lottie/image");
-
+          lottie.setScaleType(ImageView.ScaleType.CENTER_CROP);
           lottie.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
